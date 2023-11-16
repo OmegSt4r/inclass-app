@@ -16,12 +16,12 @@ const CounterComponent = () => {
 
   return (
     <div className="counter-container">
-      <div className="counter-value">Counter Value: {counter}</div>
+      <div className="counter-value">{counter}</div>
       <button className="counter-button" onClick={handleIncrement}>
-        Increment
+        +
       </button>
       <button className="counter-button" onClick={handleDecrement}>
-        Decrement
+        -
       </button>
     </div>
   );
