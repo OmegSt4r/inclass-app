@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import Hero from './Components/Hero';
+import imageSrc from './Components/Assets/todo.jpg';
 function App() {
+  const heroData = {
+    imageSrc: './Components/Assets/todo.jpg',
+    heading: 'Hello World',
+    subHeading: 'Welcome to my app by using props',
+    buttonText: 'Learn More',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Hero data={heroData} />
+      
     </div>
   );
 }
-
 export default App;
